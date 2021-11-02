@@ -1,0 +1,47 @@
+.player-image-wrapper {
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+}
+
+.player-image {
+    width: 400px;
+
+    display: block;
+    margin: auto;
+    border-bottom: 2px solid lightgrey;
+}
+
+.player-wrapper {
+    border: 2px solid lightgrey;
+}
+
+.player-name {
+    border: 2px solid grey;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px black;
+    height: 120px;
+}
+.player-first-name {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+.player-last-name {
+    font-size: 60px;
+
+    margin-top: -60px;
+}
+
+.player-stats {
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

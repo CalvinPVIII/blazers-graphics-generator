@@ -1,0 +1,10 @@
+.player-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.player-card {
+    border: 1px solid black;
+    width: 500px;
+}
