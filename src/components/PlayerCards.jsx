@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import "../styles/PlayerCards.css";
 import Player from "./Player";
 
-function PlayerCards() {
+function PlayerCards(props) {
     const [isApiLoaded, setIsApiLoaded] = useState(false);
     const [apiReturn, setApiReturn] = useState();
     const [blazersPlayers, setBlazersPlayers] = useState();
     useEffect(() => {
         fetch(
-            "https://www.balldontlie.io/api/v1/stats?game_ids[]=473503&seasons[]=2021"
+            `https://www.balldontlie.io/api/v1/stats?game_ids[]=${props.gameId}}&seasons[]=2021`
         )
             .then((result) => result.json())
             .then((result) => {
